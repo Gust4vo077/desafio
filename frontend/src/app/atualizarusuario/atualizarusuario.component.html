@@ -1,0 +1,16 @@
+<div class="container login-container">
+    <div class="login-box">
+        <h2 class="text-center">Atualizar Usuário</h2>
+        <form (ngSubmit)="onSubmit(nome.value, senha.value)">
+            <div class="form-group">
+                <label for="email">Nome</label>
+                <input type="text" required #nome class="form-control" name="nome" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" #senha class="form-control" name="senha"id="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Atualizar</button>
+        </form>
+    </div>
+</div>
